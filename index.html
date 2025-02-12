@@ -3,6 +3,7 @@
   <title>Diana's Redesign</title>
   <link rel="icon" href="peace sign gif.gif">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next&display=swap');
     .topbar {
       background-color: #b588c7;
       height: 35px;
@@ -26,29 +27,34 @@
     .searchbar>input[type=search]:focus {
       outline: None;
     }
-
+    .head {
+      display: flex;
+    }
+    .head > h1 {
+      font-family: "Atkinson Hyperlegible Next";
+    }
     .profpic {
+      border-radius: 50%;
       width: 250px;
       height: 250px;
-      overflow: hidden;
-      border-radius: 50%;
-    }
-    .profpic > img {
-      
+      padding: 20px;
     }
   </style>
 </head>
 <body>
   <div class="topbar">
-    <img src="hamburger button.png" style="padding: 5px" alt="hamburger button">
+    <img src="hamburger button.png" style="padding: 5px; padding-left: 20px" alt="hamburger button">
     <div style="display:flex; margin-left:auto">
       <div class="searchbar" style="padding-top:5px">
         <input type="search">
       </div>
-      <img src="profile icon.png" style="margin-left: auto; padding: 5px" alt="profile icon">
+      <img src="profile icon.png" style="margin-left: auto; padding: 5px; padding-right: 20px" alt="profile icon">
     </div>
   </div>
-  <div class="profpic">
-    <img src="profpic.png" style="position: ">
+  <div class="head">
+    <img class="profpic" src="profpic.png" alt="me!">
+    <h1>
+      @dianachu
+    </h1>
   </div>
 </body>
