@@ -3,8 +3,52 @@
   <title>Diana's Redesign</title>
   <link rel="icon" href="peace sign gif.gif">
   <style>
+    .topbar {
+      background-color: #b588c7;
+      height: 35px;
+      display: inline-flex;
+      width: 100%;
+    }
+
+    .searchbar>input[type=search] {
+      background-color: #c7a5cf;
+      background-image: url(https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png);
+      background-size: 20px;
+      background-position: 3% 50%;
+      background-repeat: no-repeat;
+      border: None;
+      border-radius: 10px;
+      padding-left: 35px;
+      color: black;
+      height: 25px;
+    }
+
+    .searchbar>input[type=search]:focus {
+      outline: None;
+    }
+
+    .profpic {
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 50%;
+    }
+    .profpic > img {
+      
+    }
   </style>
 </head>
-<body style="background-color: #cdcbee">
-  placeholder
+<body>
+  <div class="topbar">
+    <img src="hamburger button.png" style="padding: 5px" alt="hamburger button">
+    <div style="display:flex; margin-left:auto">
+      <div class="searchbar" style="padding-top:5px">
+        <input type="search">
+      </div>
+      <img src="profile icon.png" style="margin-left: auto; padding: 5px" alt="profile icon">
+    </div>
+  </div>
+  <div class="profpic">
+    <img src="profpic.png" style="position: ">
+  </div>
 </body>
