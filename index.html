@@ -4,6 +4,8 @@
   <link rel="icon" href="peace sign gif.gif">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
     .topbar {
       background-color: #b588c7;
@@ -31,15 +33,31 @@
 
     .head {
       display: flex;
+      justify-content: space-between;
+
+    }
+
+    .current-mood-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+      padding-right: 40px;
+    }
+
+    .current-mood {
+      text-align: center;
+      font-family: "Indie Flower";
+      margin: -8px;
+      font-size: 20px
     }
 
     .mood {
       width: 200px;
       height: 200px;
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-      padding: 20px;
       border-radius: 15%;
-      align-self: center;
     }
 
     .handle {
@@ -51,17 +69,21 @@
       border-radius: 50%;
       width: 250px;
       height: 250px;
-      padding: 20px;
+      padding-left: 40px;
     }
 
     .bio {
       font-family: "Atkinson Hyperlegible Next";
       align-self: center;
+      padding: 30px;
     }
+
     .biolink {
       color: #b588c7;
     }
+
     .name {
+      font-family: Quicksand;
       font-size: 30px;
     }
   </style>
@@ -80,12 +102,19 @@
     @dianachu
   </h1>
   <div class="head">
-    <img class="profpic" src="profpic.png" alt="me!">
+    <div>
+      <img class="profpic" src="profpic.png" alt="me!">
+    </div>
     <div class="bio">
       <p class="name">diana</p>
       <p>this is my bio, idk what to put here</p>
-        <a class="biolink" href="https://www.instagram.com/dianachu_/">here's a link</a>
+      <a class="biolink" href="https://www.instagram.com/dianachu_/">here's a link</a>
     </div>
-    <img class="mood" src="https://gifdb.com/images/featured/kawaii-pink-zcbdt534zhlc19ye.gif" alt="pink claw gif">
+    <div class="current-mood-container">
+      <h1 class="current-mood">
+        current mood
+      </h1>
+      <img class="mood" src="https://gifdb.com/images/featured/kawaii-pink-zcbdt534zhlc19ye.gif" alt="pink claw gif">
+    </div>
   </div>
 </body>
