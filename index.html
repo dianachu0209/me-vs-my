@@ -4,6 +4,7 @@
   <link rel="icon" href="peace sign gif.gif">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next&display=swap');
+
     .topbar {
       background-color: #b588c7;
       height: 35px;
@@ -27,17 +28,41 @@
     .searchbar>input[type=search]:focus {
       outline: None;
     }
+
     .head {
       display: flex;
     }
-    .head > h1 {
-      font-family: "Atkinson Hyperlegible Next";
+
+    .mood {
+      width: 200px;
+      height: 200px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      padding: 20px;
+      border-radius: 15%;
+      align-self: center;
     }
+
+    .handle {
+      font-family: "Atkinson Hyperlegible Next";
+      text-align: center;
+    }
+
     .profpic {
       border-radius: 50%;
       width: 250px;
       height: 250px;
       padding: 20px;
+    }
+
+    .bio {
+      font-family: "Atkinson Hyperlegible Next";
+      align-self: center;
+    }
+    .biolink {
+      color: #b588c7;
+    }
+    .name {
+      font-size: 30px;
     }
   </style>
 </head>
@@ -51,10 +76,16 @@
       <img src="profile icon.png" style="margin-left: auto; padding: 5px; padding-right: 20px" alt="profile icon">
     </div>
   </div>
+  <h1 class="handle">
+    @dianachu
+  </h1>
   <div class="head">
     <img class="profpic" src="profpic.png" alt="me!">
-    <h1>
-      @dianachu
-    </h1>
+    <div class="bio">
+      <p class="name">diana</p>
+      <p>this is my bio, idk what to put here</p>
+        <a class="biolink" href="https://www.instagram.com/dianachu_/">here's a link</a>
+    </div>
+    <img class="mood" src="https://gifdb.com/images/featured/kawaii-pink-zcbdt534zhlc19ye.gif" alt="pink claw gif">
   </div>
 </body>
