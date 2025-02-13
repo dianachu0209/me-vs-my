@@ -34,7 +34,8 @@
     .head {
       display: flex;
       justify-content: space-between;
-
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
     .current-mood-container {
@@ -43,7 +44,6 @@
       justify-content: center;
       align-items: center;
       gap: 0;
-      padding-right: 40px;
     }
 
     .current-mood {
@@ -69,7 +69,6 @@
       border-radius: 50%;
       width: 250px;
       height: 250px;
-      padding-left: 40px;
     }
 
     .bio {
@@ -85,6 +84,28 @@
     .name {
       font-family: Quicksand;
       font-size: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 200px 200px 200px 200px;
+      grid-gap: 10px;
+      align-items: center;
+      justify-content: center;
+      padding: 30px
+    }
+
+    .titleimages {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .postimages {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      opacity: 0.8;
     }
   </style>
 </head>
@@ -117,4 +138,18 @@
       <img class="mood" src="https://gifdb.com/images/featured/kawaii-pink-zcbdt534zhlc19ye.gif" alt="pink claw gif">
     </div>
   </div>
+  <section class="gallery">
+    <img class="titleimages" src="me.png" alt="laptop with chinese word for me">
+    <img class="postimages" src="me1.jpg" alt="me">
+    <img class="postimages" src="me2.jpg" alt="me again">
+    <img class="postimages" src="me3.jpg" alt="me3">
+    <img class="titleimages" src="friends.png" alt="purple arcade with chinese text for friends">
+    <img class="postimages" src="friends1.jpg" alt="porter robinson on nye">
+    <img class="postimages" src="friends2.jpg" alt="christmas spirit in chengdu">
+    <img class="postimages" src="friends3.jpg" alt="childhood bestie">
+    <img class="titleimages" src="places.png" alt="coffee work image with chinese word for places">
+    <img class="postimages" src="place1.jpg" alt="chengdu night market">
+    <img class="postimages" src="place2.jpg" alt="tokyo tower">
+    <img class="postimages" src="place3.jpg" alt="xi'an, china">
+  </section>
 </body>
